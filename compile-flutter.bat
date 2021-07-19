@@ -1,0 +1,1 @@
+protoc --proto_path=proto --proto_path=grpcinclude --dart_out=grpc:grpctest grpctest.proto  

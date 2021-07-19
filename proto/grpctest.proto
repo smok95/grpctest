@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option go_package = "example.com/grpctest/grpctest";
+package grpctest;
+
+message Request {
+    string msg = 1;
+}
+
+message Response {
+    string result = 1;
+}
+
+service GrpctestService {
+    rpc SendRequest(Request) returns (Response);
+}
